@@ -1,4 +1,6 @@
 export {
+    productsFetching,
+    productsFetchingError,
     productsFetched,
     productRemoved,
     productMaxPriceFetched,
