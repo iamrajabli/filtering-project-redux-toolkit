@@ -1,0 +1,17 @@
+@import url('../../assets/css/style.css');
+
+html {
+    font-family: 'montserrat';
+    font-size: 16px;
+}
+
+.container {
+    width: 1170px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.container .title {
+    font-size: 34px;
+    color: #333;
+}
