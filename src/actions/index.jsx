@@ -1,13 +1,5 @@
 export {
-    //     productsFetching,
-    //     productsFetchingError,
-    //     productsFetched,
-    //     productRemoved,
-    //     productMaxPriceFetched,
-    filtersChangeRange,
-    filtersChooseClothes,
-    filtersClothesLabelsFetched,
-    filtersReset,
-    fetchData,
     fetchRemovingProduct,
+    fetchMaxPrice,
+    fetchFilters
 } from './actions';

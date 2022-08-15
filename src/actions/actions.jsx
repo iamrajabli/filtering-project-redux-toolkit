@@ -1,17 +1,21 @@
 import { createAction } from "@reduxjs/toolkit";
 
 import {
-    productsFetching,
-    productsFetchingError,
     productRemoved,
+    productMaxPriceFetched
 } from '../components/Products/ProductsSlice';
 
-export const fetchData = (request, action, url = 'http://localhost:3000/products') => dispatch => {
-    dispatch(productsFetching());
-    request(url)
-        .then(data => dispatch(action(data)))
-        .catch(_ => dispatch(productsFetchingError()))
+// import { filtersClothesLabelsFetched } from '../components/Filter/FilterSlice';
+
+export const fetchMaxPrice = request => dispatch => {
+    request('http://localhost:3000/products')
+        .then(data => dispatch(productMaxPriceFetched(data)))
 }
+
+// export const fetchFilters = request => dispatch => {
+//     request('http://localhost:3000/clothing')
+//         .then(data => dispatch(filtersClothesLabelsFetched(data)))
+// }
 
 export const fetchRemovingProduct = (request, id) => dispatch => {
     request(`http://localhost:3000/products/${id}`, 'DELETE')
@@ -79,7 +83,7 @@ export const filtersChooseClothes = createAction('FILTERS_CHOOSE_CLOTHES')
 //     }
 // }
 
-export const filtersClothesLabelsFetched = createAction('FILTERS_CLOTHES_LABELS_FETCHED')
+// export const filtersClothesLabelsFetched = createAction('FILTERS_CLOTHES_LABELS_FETCHED')
 
 // export const filtersClothesLabelsFetched = labels => {
 //     return {

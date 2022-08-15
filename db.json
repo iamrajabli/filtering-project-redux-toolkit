@@ -1,102 +1,102 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "alt": "polo",
-            "img": "https://demos.creative-tim.com/now-ui-kit-pro-react/static/media/polo.2a800d22.jpg",
-            "title": "Polo Ralph Lauren",
-            "desc": "Impeccably tailored in Italy from lightweight navy wool.",
-            "price": 300,
-            "clothing": "Casual Shirts"
-        },
-        {
-            "id": 2,
-            "alt": "polo",
-            "img": "https://demos.creative-tim.com/now-ui-kit-pro-react/static/media/tom-ford.df2c2ff8.jpg",
-            "title": "Tom Ford",
-            "desc": "Immaculate tailoring is TOM FORD's forte.",
-            "price": 879,
-            "clothing": "Bag"
-        },
-        {
-            "id": 3,
-            "alt": "polo",
-            "img": "https://demos.creative-tim.com/now-ui-kit-pro-react/static/media/wooyoungmi.464d961b.jpg",
-            "title": "Wooyoungmi",
-            "desc": "Dark-grey slub wool, pintucked notch lapels.",
-            "price": 555,
-            "clothing": "Formal Shirts"
-        },
-        {
-            "id": 4,
-            "alt": "polo",
-            "img": "https://demos.creative-tim.com/now-ui-kit-pro-react/static/media/sweeney.fab8741b.jpg",
-            "title": "Thom Sweeney",
-            "desc": "It's made from lightweight grey wool woven.",
-            "price": 680,
-            "clothing": "Polos"
-        },
-        {
-            "id": 5,
-            "alt": "polo",
-            "img": "https://demos.creative-tim.com/now-ui-kit-pro-react/static/media/kingsman.b4d14421.jpg",
-            "title": "Kingsman",
-            "desc": "Crafted from khaki cotton and fully canvassed.",
-            "price": 725,
-            "clothing": "Shorts"
-        },
-        {
-            "id": 6,
-            "alt": "polo",
-            "img": "https://demos.creative-tim.com/now-ui-kit-pro-react/static/media/boglioli.dac4f8eb.jpg",
-            "title": "Boglioli",
-            "desc": "Masterfully crafted in Northern Italy.",
-            "price": 879,
-            "clothing": "Jeans"
-        },
-        {
-            "id": 7,
-            "alt": "polo",
-            "img": "https://demos.creative-tim.com/now-ui-kit-pro-react/static/media/wooyoungmi.464d961b.jpg",
-            "title": "Wooyoungmi",
-            "desc": "Dark-grey slub wool, pintucked notch lapels.",
-            "price": 555,
-            "clothing": "Formal Shirts"
-        },
-        {
-            "id": 8,
-            "alt": "polo",
-            "img": "https://demos.creative-tim.com/now-ui-kit-pro-react/static/media/tom-ford.df2c2ff8.jpg",
-            "title": "Tom Ford",
-            "desc": "Immaculate tailoring is TOM FORD's forte.",
-            "price": 178,
-            "clothing": "Bag"
-        }
-    ],
-    "clothing": [
-        {
-            "id": 1,
-            "name": "Casual Shirts"
-        },
-        {
-            "id": 2,
-            "name": "Bag"
-        },
-        {
-            "id": 3,
-            "name": "Formal Shirts"
-        },
-        {
-            "id": 4,
-            "name": "Polos"
-        },
-        {
-            "id": 5,
-            "name": "Shorts"
-        },
-        {
-            "id": 6,
-            "name": "Jeans"
-        }
-    ]
+  "products": [
+    {
+      "id": 2,
+      "alt": "polo",
+      "img": "https://demos.creative-tim.com/now-ui-kit-pro-react/static/media/tom-ford.df2c2ff8.jpg",
+      "title": "Tom Ford",
+      "desc": "Immaculate tailoring is TOM FORD's forte.",
+      "price": 879,
+      "clothing": "Bag"
+    },
+    {
+      "id": 3,
+      "alt": "polo",
+      "img": "https://demos.creative-tim.com/now-ui-kit-pro-react/static/media/wooyoungmi.464d961b.jpg",
+      "title": "Wooyoungmi",
+      "desc": "Dark-grey slub wool, pintucked notch lapels.",
+      "price": 555,
+      "clothing": "Formal Shirts"
+    },
+    {
+      "id": 4,
+      "alt": "polo",
+      "img": "https://demos.creative-tim.com/now-ui-kit-pro-react/static/media/sweeney.fab8741b.jpg",
+      "title": "Thom Sweeney",
+      "desc": "It's made from lightweight grey wool woven.",
+      "price": 680,
+      "clothing": "Polos"
+    },
+    {
+      "id": 5,
+      "alt": "polo",
+      "img": "https://demos.creative-tim.com/now-ui-kit-pro-react/static/media/kingsman.b4d14421.jpg",
+      "title": "Kingsman",
+      "desc": "Crafted from khaki cotton and fully canvassed.",
+      "price": 725,
+      "clothing": "Shorts"
+    },
+    {
+      "id": 6,
+      "alt": "polo",
+      "img": "https://demos.creative-tim.com/now-ui-kit-pro-react/static/media/boglioli.dac4f8eb.jpg",
+      "title": "Boglioli",
+      "desc": "Masterfully crafted in Northern Italy.",
+      "price": 879,
+      "clothing": "Jeans"
+    },
+    {
+      "id": 7,
+      "alt": "polo",
+      "img": "https://demos.creative-tim.com/now-ui-kit-pro-react/static/media/wooyoungmi.464d961b.jpg",
+      "title": "Wooyoungmi",
+      "desc": "Dark-grey slub wool, pintucked notch lapels.",
+      "price": 555,
+      "clothing": "Formal Shirts"
+    },
+    {
+      "id": 8,
+      "alt": "polo",
+      "img": "https://demos.creative-tim.com/now-ui-kit-pro-react/static/media/tom-ford.df2c2ff8.jpg",
+      "title": "Tom Ford",
+      "desc": "Immaculate tailoring is TOM FORD's forte.",
+      "price": 178,
+      "clothing": "Bag"
+    },
+    {
+      "id": 9,
+      "alt": "polo",
+      "img": "https://demos.creative-tim.com/now-ui-kit-pro-react/static/media/boglioli.dac4f8eb.jpg",
+      "title": "Boglioli",
+      "desc": "Masterfully crafted in Northern Italy.",
+      "price": 1112,
+      "clothing": "Jeans"
+    }
+  ],
+  "clothing": [
+    {
+      "id": 1,
+      "name": "Casual Shirts"
+    },
+    {
+      "id": 2,
+      "name": "Bag"
+    },
+    {
+      "id": 3,
+      "name": "Formal Shirts"
+    },
+    {
+      "id": 4,
+      "name": "Polos"
+    },
+    {
+      "id": 5,
+      "name": "Shorts"
+    },
+    {
+      "id": 6,
+      "name": "Jeans"
+    }
+  ]
 }

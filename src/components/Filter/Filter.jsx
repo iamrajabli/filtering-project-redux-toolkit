@@ -1,13 +1,11 @@
-import { useDispatch, useSelector } from 'react-redux/es/exports';
-import { fetchData } from '../../actions';
-import useHttp from '../../hooks/http.hook';
+import { useDispatch, useSelector } from 'react-redux';
 import { GrPowerReset } from 'react-icons/gr';
 import { BsChevronDown } from 'react-icons/bs';
 import { useEffect, useRef } from 'react';
 import {
+    fetchFilters,
     filtersChangeRange,
     filtersChooseClothes,
-    filtersClothesLabelsFetched,
     filtersReset
 } from './FilterSlice';
 
@@ -16,12 +14,11 @@ const Filter = _ => {
     const dispatch = useDispatch(),
         { range, clothesLabels } = useSelector(state => state.filters),
         { maxPrice } = useSelector(state => state.products),
-        { request } = useHttp(),
         inputRefs = useRef([])
 
 
     useEffect(() => {
-        dispatch(fetchData(request, filtersClothesLabelsFetched, 'http://localhost:3000/clothing'))
+        dispatch(fetchFilters())
     }, []);
 
     const resetFilters = _ => {

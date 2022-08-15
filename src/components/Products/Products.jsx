@@ -1,18 +1,10 @@
 import { useSelector, useDispatch } from 'react-redux';
-import useHttp from '../../hooks/http.hook';
-import {
-    fetchData,
-    fetchRemovingProduct
-} from '../../actions';
-import {
-    productMaxPriceFetched,
-    productsFetched
-} from './ProductsSlice';
 import { BsSuitHeart } from 'react-icons/bs';
 import { Loading } from '../Loading';
 import { Error } from '../Error';
 import { useEffect } from 'react';
-
+import { fetchProducts, fetchProductRemove, fetchMaxPrice } from './ProductsSlice';
+import useHttp from '../../hooks/http.hook';
 const Products = _ => {
 
     const dispatch = useDispatch(),
@@ -47,12 +39,12 @@ const Products = _ => {
 
 
     useEffect(() => {
-        dispatch(fetchData(request, productsFetched))
-        dispatch(fetchData(request, productMaxPriceFetched))
+        dispatch(fetchProducts())
+        dispatch(fetchMaxPrice())
     }, []);
 
     const onRemove = id => {
-        dispatch(fetchRemovingProduct(request, id))
+        dispatch(fetchProductRemove(id))
     }
 
     const renderElements = data => {
