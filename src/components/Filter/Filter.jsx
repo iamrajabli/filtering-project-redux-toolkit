@@ -1,15 +1,15 @@
 import { useDispatch, useSelector } from 'react-redux/es/exports';
-import {
-    filtersChangeRange,
-    filtersChooseClothes,
-    filtersClothesLabelsFetched,
-    filtersReset,
-    fetchData
-} from '../../actions';
+import { fetchData } from '../../actions';
 import useHttp from '../../hooks/http.hook';
 import { GrPowerReset } from 'react-icons/gr';
 import { BsChevronDown } from 'react-icons/bs';
 import { useEffect, useRef } from 'react';
+import {
+    filtersChangeRange,
+    filtersChooseClothes,
+    filtersClothesLabelsFetched,
+    filtersReset
+} from './FilterSlice';
 
 const Filter = _ => {
 

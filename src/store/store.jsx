@@ -1,4 +1,5 @@
-import { products, filters } from '../reducers';
+import products from '../components/Products/ProductsSlice';
+import filters from '../components/Filter/FilterSlice';
 import { configureStore } from "@reduxjs/toolkit";
 
 // const store = createStore(combineReducers({ products, filters }),

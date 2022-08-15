@@ -1,5 +1,11 @@
 import { createAction } from "@reduxjs/toolkit";
 
+import {
+    productsFetching,
+    productsFetchingError,
+    productRemoved,
+} from '../components/Products/ProductsSlice';
+
 export const fetchData = (request, action, url = 'http://localhost:3000/products') => dispatch => {
     dispatch(productsFetching());
     request(url)
@@ -13,7 +19,7 @@ export const fetchRemovingProduct = (request, id) => dispatch => {
         .catch(_ => dispatch(productsFetchingError()))
 }
 
-export const productsFetching = createAction('PRODUCTS_FETCHING')
+// export const productsFetching = createAction('PRODUCTS_FETCHING')
 
 // export const productsFetching = _ => {
 //     return {
@@ -21,14 +27,14 @@ export const productsFetching = createAction('PRODUCTS_FETCHING')
 //     }
 // }
 
-export const productsFetchingError = createAction('PRODUCTS_FETCHING_ERROR')
+// export const productsFetchingError = createAction('PRODUCTS_FETCHING_ERROR')
 
 // export const productsFetchingError = _ => {
 //     return {
 //         type: 'PRODUCTS_FETCHING_ERROR'
 //     }
 // }
-export const productsFetched = createAction('PRODUCTS_FETCHED')
+// export const productsFetched = createAction('PRODUCTS_FETCHED')
 
 // export const productsFetched = products => {
 //     return {
@@ -37,7 +43,7 @@ export const productsFetched = createAction('PRODUCTS_FETCHED')
 //     }
 // }
 
-export const productRemoved = createAction('PRODUCT_REMOVED')
+// export const productRemoved = createAction('PRODUCT_REMOVED')
 
 // export const productRemoved = id => {
 //     return {
@@ -46,7 +52,7 @@ export const productRemoved = createAction('PRODUCT_REMOVED')
 //     }
 // }
 
-export const productMaxPriceFetched = createAction('PRODUCT_MAX_PRICE_FETCHED')
+// export const productMaxPriceFetched = createAction('PRODUCT_MAX_PRICE_FETCHED')
 
 // export const productMaxPriceFetched = price => {
 //     return {

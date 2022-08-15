@@ -1,11 +1,13 @@
 import { useSelector, useDispatch } from 'react-redux';
 import useHttp from '../../hooks/http.hook';
 import {
-    productMaxPriceFetched,
     fetchData,
-    productsFetched,
     fetchRemovingProduct
 } from '../../actions';
+import {
+    productMaxPriceFetched,
+    productsFetched
+} from './ProductsSlice';
 import { BsSuitHeart } from 'react-icons/bs';
 import { Loading } from '../Loading';
 import { Error } from '../Error';
