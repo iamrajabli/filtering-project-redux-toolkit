@@ -1,6 +1,7 @@
 import products from '../components/Products/ProductsSlice';
 import filters from '../components/Filter/FilterSlice';
 import { configureStore } from "@reduxjs/toolkit";
+import { apiSlice } from '../api/apiSlice';
 
 // const store = createStore(combineReducers({ products, filters }),
 //     compose(applyMiddleware(ReduxThunk),
@@ -8,8 +9,11 @@ import { configureStore } from "@reduxjs/toolkit";
 
 
 const store = configureStore({
-    reducer: { products, filters },
-    middleware: getDefaultMiddleware => getDefaultMiddleware(),
+    reducer: {
+        products,
+        filters,
+        [apiSlice.reducerPath]: apiSlice.reducer },
+    middleware: getDefaultMiddleware => getDefaultMiddleware().concat(apiSlice.middleware),
     devTools: process.env.NODE_ENV !== 'prodaction'
 })
 

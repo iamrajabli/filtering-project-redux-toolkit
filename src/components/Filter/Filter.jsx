@@ -1,25 +1,25 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { GrPowerReset } from 'react-icons/gr';
 import { BsChevronDown } from 'react-icons/bs';
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import {
-    fetchFilters,
     filtersChangeRange,
     filtersChooseClothes,
-    filtersReset
+    filtersReset,
 } from './FilterSlice';
+import { useGetFiltersQuery } from '../../api/apiSlice';
 
 const Filter = _ => {
 
+    const {
+        data: filters = []
+    } = useGetFiltersQuery();
+
     const dispatch = useDispatch(),
-        { range, clothesLabels } = useSelector(state => state.filters),
+        { range } = useSelector(state => state.filters),
         { maxPrice } = useSelector(state => state.products),
         inputRefs = useRef([])
 
-
-    useEffect(() => {
-        dispatch(fetchFilters())
-    }, []);
 
     const resetFilters = _ => {
         dispatch(filtersReset())
@@ -59,7 +59,7 @@ const Filter = _ => {
                     <BsChevronDown />
                 </h5>
                 <div className="filter__content">
-                    {clothesLabels.map(({ id, name }) => (
+                    {filters.map(({ id, name }) => (
                         <div key={id} className="filter__content-item">
                             <input
                                 ref={e => inputRefs.current[id - 1] = e}
